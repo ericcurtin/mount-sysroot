@@ -46,6 +46,5 @@ int main(const int argc, const char* const argv[]) {
     return EXIT_FAILURE;
   }
 
-  printf("Successfully mounted '%s' '%s' '%s'\n", device, mountpoint, fstype);
   return EXIT_SUCCESS;
 }

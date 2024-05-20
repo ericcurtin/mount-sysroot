@@ -30,7 +30,7 @@ static char* read_proc_cmdline(void) {
   size_t len;
 
   /* Note that /proc/cmdline will not end in a newline, so getline
-   * will fail unelss we provide a length.
+   * will fail unless we provide a length.
    */
   if (getline(&cmdline, &len, f) < 0) {
     perror("Failed to read /proc/cmdline");

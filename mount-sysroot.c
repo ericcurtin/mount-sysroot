@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 static int usage(void) {
-  fprintf(stderr, "Usage: mountgpt -t <fstype> <device> <mountpoint>\n");
+  fprintf(stderr, "Usage: mount-sysroot -t <fstype> <device> <mountpoint>\n");
   return EXIT_FAILURE;
 }
 

@@ -2,10 +2,10 @@
 
 set -e
 
-gcc -O3 -Wall -Wextra -pedantic -fanalyzer -o mountgpt.gcc mountgpt.c -lblkid &
-clang -O3 -Wall -Wextra -pedantic -o mountgpt.clang mountgpt.c -lblkid &
+gcc -O3 -Wall -Wextra -pedantic -fanalyzer -o mount-sysroot.gcc mount-sysroot.c -lblkid &
+clang -O3 -Wall -Wextra -pedantic -o mount-sysroot.clang mount-sysroot.c -lblkid &
 wait
 
-mv mountgpt.gcc mountgpt &
-rm mountgpt.clang &
+mv mount-sysroot.gcc mount-sysroot &
+rm mount-sysroot.clang &
 
